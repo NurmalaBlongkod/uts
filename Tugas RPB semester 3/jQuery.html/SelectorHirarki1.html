@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="http://codde.jqueery.com/jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+        <p>Elemen Anak 1</p>
+        <p>Elemen Anak 2</p>
+    </div>
+    <button id="addTextButton">Tambah pada Elemen Anak</button>
+    <script>
+        $(document).ready(function () {
+            $("#addTextButton").click(function() {
+                $("#parent p").text("Teks baru untuk elemen anak");
+            });
+        });
+    </script>
+</body>
+</html>
